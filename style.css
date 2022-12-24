@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Roboto:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:  hsl(30, 38%, 92%);
+   
+    
+    
+}
+.container{
+    padding: 0 10px;
+    margin:  35px auto;
+      
+}
+.grid{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img img{
+   max-width: 100% ;
+   display: inherit;
+   
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 33px;
+}
+.product-brand{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:hsl(228, 12%, 48%);
+    
+}
+.product-name{
+    font-family: 'Fraunces', serif;
+}
+.product-discription{
+    color:hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+.prod-price{
+    display: flex;
+    flex-direction: row;
+}
+.prod-price .product-n-price {
+    font-family: 'Fraunces', serif;
+    color:hsl(152, 47%, 35%) ;
+    font-size: 30px;
+    padding-right: 20px;
+
+}
+.prod-price .product-o-price{
+    padding: 10px ;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+
+}
+.ctr{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color:  hsl(152, 47%, 35%);
+    color: #fff;
+    border-radius: 10px;
+    border-color: hsl(152, 47%, 35%) ;
+    padding: 3px 5px 3px 5px;
+    height: 40px;
+     
+    
+
+    
+}
+.ctr:hover{
+    background-color: hsl(152, 47%, 18%) ;
+}
+.attribution{
+    font-size: 5px;
+}
+@media screen and  (width:375px) {
+    
+    .grid{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .product-content{
+        min-height: 300px;
+        overflow: hidden;
+    }
+    .img img{
+         height: 300px;
+         width: 355px;
+         display: inherit;
+    }
+}
+@media screen and  (width:425px) {
+    
+    .grid{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .product-content{
+        min-height: 300px;
+        overflow: hidden;
+    }
+    .img img{
+        
+         height: 300px;
+         width: 405px;
+         display: inherit;
+    }
+}
+ 
